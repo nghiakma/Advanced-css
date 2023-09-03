@@ -1,0 +1,11 @@
+//dung max-width: tranh tran man hinh
+.row{
+    max-width: $grid-width;
+    background-color: #eee;
+    margin: 0 auto;
+    margin-bottom: $gutter-vertical;
+//chon moi thu ngoai tru phan tu cuoi cung
+    &:not(:last-child){
+
+    }
+}

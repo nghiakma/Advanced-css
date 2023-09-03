@@ -1,0 +1,10 @@
+.composition{
+    position: relative;
+
+    &_photo{
+        width: 55%;
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+    }
+}

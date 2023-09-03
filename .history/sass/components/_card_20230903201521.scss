@@ -1,0 +1,16 @@
+.card{
+    position: relative;
+    height: 52rem;
+
+    &__side{
+        height: 52rem;
+
+        &--front {
+            background-color: $color-white;
+        }
+    }
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+    }
+}

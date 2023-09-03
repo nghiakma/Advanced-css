@@ -1,0 +1,29 @@
+//dung max-width: tranh tran man hinh
+.row{
+    max-width: $grid-width;
+    background-color: #eee;
+    margin: 0 auto;
+ 
+//chon moi thu ngoai tru phan tu cuoi cung
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+   .col-1-of-2{
+    width: calc((100% - #{$gutter-horizontal})/2);
+    background-color: orangered;
+    //chieu cao se bi sup do o phan tu cha la row = 0
+    float: left;
+
+    &:not(:last-child){
+        margin-right: $gutter-horizontal;
+    }
+   }
+
+   .col-1-of-3{
+    width: calc((100% -2 * #{$gutter-horizontal}) / 3);
+    background-color: orangered;
+   }
+}
